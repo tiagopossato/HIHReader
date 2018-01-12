@@ -1,0 +1,4 @@
+HIHReader       KEYWORD1
+getHumidity	    KEYWORD2
+getTemperature  KEYWORD2
+read            KEYWORD2

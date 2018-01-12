@@ -1,5 +1,5 @@
 
-# Humidity and Temperature Reader for Honeywell Sensors
+# Humidity and Temperature Reader for Honeywell Sensors using Arduino platform
 
 Reads temperature and humidity from Honeywell sensors using the i2c interface.  
 **Sensors with SPI output are *not* supported!**  
@@ -38,26 +38,6 @@ HIH6131-021-xxxx
 The code follows the [Technical Note on I2C communication with Honeywell sensors](http://sensing.honeywell.com/i2c-comms-humidicon-tn-009061-2-en-final-07jun12.pdf)
 
 See also: [Blog post on interfacing Honeywell humidity sensors on a Raspberry Pi 2](https://www.karlrupp.net/2016/03/raspberry-pi-honeywell-humidity-temperature-sensor).
-
-
-## Build
-
-Make sure you have `i2c-tools` and `libi2c-dev` installed on your system.
-On Debian-based systems (Ubuntu, Raspbian):
-
-    $> sudo apt-get install i2c-tools libi2c-dev
-
-Then issue `make`:
-
-    $> make
-
-
-## Run
-
-Run the executable via
-
-    $> ./i2cHoneywellHumidity
-
 
 ## License
 
