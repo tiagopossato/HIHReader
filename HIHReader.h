@@ -6,13 +6,13 @@
 
 class HIHReader
 {
-  public:
-    HIHReader(int _address);
-    double getHumidity();
-    double getTemperature();
-    void read();
-
-  private:
+public:
+  HIHReader(int _address);
+  void read(double *temperature, double *humidity);
+private:
+  double getHumidity();
+  double getTemperature();
+  void read();
   double temperature;
   double humidity;
   int address;

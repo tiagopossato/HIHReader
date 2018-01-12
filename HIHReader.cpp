@@ -41,3 +41,10 @@ void HIHReader::read()
   int reading_temp = (buf[2] << 6) + (buf[3] >> 2);
   temperature = reading_temp / 16382.0 * 165.0 - 40;
 }
+
+void HIHReader::read(double *temperature, double *humidity)
+{
+  read();
+  *temperature = temperature;
+  *humidity = humidity;
+}
