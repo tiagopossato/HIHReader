@@ -5,12 +5,12 @@ HIHReader::HIHReader(int _address)
   address = _address;
 }
 
-double HIHReader::getHumidity()
+float HIHReader::getHumidity()
 {
   return humidity;
 }
 
-double HIHReader::getTemperature()
+float HIHReader::getTemperature()
 {
   return temperature;
 }
@@ -42,9 +42,9 @@ void HIHReader::read()
   temperature = reading_temp / 16382.0 * 165.0 - 40;
 }
 
-void HIHReader::read(double *temperature, double *humidity)
+void HIHReader::read(float *_temperature, float *_humidity)
 {
   read();
-  *temperature = temperature;
-  *humidity = humidity;
+  *_temperature = temperature;
+  *_humidity = humidity;
 }
