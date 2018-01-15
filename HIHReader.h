@@ -8,11 +8,11 @@ class HIHReader
 {
 public:
   HIHReader(int _address);
-  void read(float *_temperature, float *_humidity);
+  bool read(float *_temperature, float *_humidity);
 private:
   float getHumidity();
   float getTemperature();
-  void read();
+  bool read();
   float temperature;
   float humidity;
   int address;
