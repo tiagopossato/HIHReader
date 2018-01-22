@@ -3,8 +3,8 @@
 
 /* Address of Honeywell sensor shifted right 1 bit */
 HIHReader hih8121(0x27);
-double temperature;
-double humidity;
+float temperature;
+float humidity;
 void setup() {
   Serial.begin(115200);
   Wire.begin();
